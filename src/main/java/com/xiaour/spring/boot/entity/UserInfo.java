@@ -1,5 +1,6 @@
 package com.xiaour.spring.boot.entity;
 
+import java.util.Date;
 
 public class UserInfo {
 	
@@ -10,8 +11,18 @@ public class UserInfo {
     private String passWord;
 
     private String name;
+    
+    private Date createTime;
+    
+    
 
-    private String age;
+	public Date getCreateTime() {
+		return createTime;
+	}
+
+	public void setCreateTime(Date createTime) {
+		this.createTime = createTime;
+	}
 
 	public Integer getId() {
 		return id;
@@ -27,14 +38,6 @@ public class UserInfo {
 
 	public void setName(String name) {
 		this.name = name;
-	}
-
-	public String getAge() {
-		return age;
-	}
-
-	public void setAge(String age) {
-		this.age = age;
 	}
 
 	public String getPassWord() {
